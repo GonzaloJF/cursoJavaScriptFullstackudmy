@@ -50,3 +50,51 @@ typeof Symbol()
 let algo ='primera expresion'
 var algo2= 2
 const algo3= true
+
+/**Json y objeto windows **/
+//este es un json
+//{
+//    prop1:1,
+//    prop2:2
+//}
+
+//'JavaScript object notation'= Json
+
+let persona={
+    nombre:'Juan Carlos',
+    apellido:'Carvajal',
+    email:'juanc@gmail.com'
+}
+
+persona.nombre
+persona.apellido
+persona.email
+
+/**Window, alert, document**/
+
+window.innerWidth
+
+alert('hola mundo')
+
+window.alert('hola mundo')
+
+/**anidamiento y scope**/
+
+var z='soy la primera variable'
+{
+    let i='cierto texto'
+    let u='otra cosa'
+    {
+        const r=3
+        var j=2
+        {
+            u=5
+            u
+        }
+        r
+        j
+    }
+    i
+    u
+}
+z
