@@ -142,3 +142,53 @@ typeof miArray
 var iterador = miArray [Symbol.iterator]();
 
 iterador.next().value
+
+miArray.push(10);
+
+/**boleanos y condicionales**/
+
+true == 1
+false == 0
+!"hola"
+
+//coercion 
+
+!!"f"
+
+true + true
+
+//ejemplo para if y else
+
+const persona2 ={
+    nombre : "Billie",
+    apellido:"Eillish",
+    edad: 17
+}
+
+if(persona.edad > 18){
+    console.log("esta persona puede tomar alcohol")
+}else{
+    console.log("esta persona no puede tomar alcohol")
+}
+
+/**loops for y while**/
+
+let miArray2 = [];
+miArray2.push(1)
+
+for(let i=0; i<10; i++){
+    miArray2.push(i);
+}
+
+miArray2
+
+miArray3 = []
+let control= 20
+while(control < 30){
+    miArray3.push(control);
+}
+
+miArray3
+
+/**while y foreach**/
+
