@@ -108,3 +108,10 @@ function SoloPares(numeroactual){
 
 let resultado2 = miArray7.filter(SoloPares)
 resultado2
+
+//otra forma de escribirlo
+
+const solopares = (numeroactual) => numeroactual % 2 === 0
+
+let resultado3 = miArray7.filter(solopares)
+resultado3
