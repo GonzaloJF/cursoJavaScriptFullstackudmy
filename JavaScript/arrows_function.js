@@ -66,3 +66,11 @@ const objeto2 ={
         return this
     }
 }
+
+//¿Que pasaria si en la const esta la arrow function y dentro de esta hay una funcion normal?
+
+const quepasaria = () =>{
+    return function mifuncionquepasaria (){
+        return this
+    }
+}
