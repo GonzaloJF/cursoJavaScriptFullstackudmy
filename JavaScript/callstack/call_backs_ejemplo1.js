@@ -1,8 +1,9 @@
+const funcionDelCallback= ()=>{
+    console.log('me ejecute despues');
+}
 
 const ejecutarMasTarde = () =>{
-    setTimeout(()=>{
-        console.log('me ejecute despues');
-    },3000);
+    setTimeout(funcionDelCallback, 3000);
 };
 
 ejecutarMasTarde();
