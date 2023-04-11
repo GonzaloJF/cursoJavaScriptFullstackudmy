@@ -62,7 +62,7 @@
           background-color: #f2f2f2;
           padding: 18px;
           width: 500px;
-          margin: auto;78
+          margin: auto;
         }
     
         ::placeholder {
@@ -77,45 +77,23 @@
         button[type = reset] {
           background-color: white;
           border: 1px solid black;
-          color: black;
+          color: black
         }
-        button.ver {
-          background-color: yellow;
-          color: black;
+        .campo-usuario{
+          font-weight: bolder;
+          font-style: italic;
+          width: 100px;
         }
       </style>
 </head>
 <body>
     <h1>Formulario estilizado con css</h1>
     <div class="container">
-        <form>
-          <input type="hidden" name="incide" id="indice"/>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre aquí" required />
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Escribe tu nombre aquí" required />
-            <label for="pais">País</label>
-            <select name="pais" id="pais"required>
-                <option selected disabled hidden> Seleccione un país</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Chile">Chile</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Brasil">Brasil</option>
-            </select>
-            <button type="submit" id="boton_enviar">Crear</button>
-            <button type="reset" id="limpiar">Limpiar</button>
-        </form>
-
         <table >
-            <thead>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>País</th>
-                <th>Acciones</th>
-                <tbody id="body_usuarios"></tbody>
-            </thead>
+          <tbody id="body_usuario"></tbody>
+           
         </table>
     </div>
-    <script src="ejemplo_fetch_crud_completo.js"></script>
+    <script src="cargarusuario.js"></script>
 </body>
 </html>
